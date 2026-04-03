@@ -312,7 +312,7 @@ class DialogSession:
     async def process_microphone_input(self) -> None:
         await self.client.say_hello()
         await self.say_hello_over_event.wait()
-        await self.client.chat_text_query("你好，我也叫豆包")
+        # await self.client.chat_text_query("你好，我也叫豆包")
 
         """处理麦克风输入"""
         stream = self.audio_device.open_input_stream()

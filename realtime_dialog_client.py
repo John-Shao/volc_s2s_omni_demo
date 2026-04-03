@@ -64,7 +64,7 @@ class RealtimeDialogClient:
     async def say_hello(self) -> None:
         """发送Hello消息"""
         payload = {
-            "content": "你好，我是豆包，有什么可以帮助你的？",
+            "content": "你好，我是巨思AI助手，有什么可以帮助你的？",
         }
         hello_request = bytearray(protocol.generate_header())
         hello_request.extend(int(300).to_bytes(4, 'big'))
